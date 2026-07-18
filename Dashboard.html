@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboardStyle.css">
+
+</head>
+
+<body>
+    <div class="sidebar" id="sidebar">
+        <h2 class="btn" onclick="hideMenu()">Mi Dashboard</h2>
+        <ul>
+            <li>Inicio</li>
+            <li>Usuarios</li>
+            <li>Reportes</li>
+            <li>Configuración</li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="header">
+            <span class="menu-btn" onclick="toggleMenu()">☰</span>
+            <h1>Panel de Control</h1>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Ventas</h3>
+                <p>$12,000</p>
+            </div>
+            <div class="card">
+                <h3>Usuarios</h3>
+                <p>320</p>
+            </div>
+            <div class="card">
+                <h3>Pedidos</h3>
+                <p>87</p>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <h3>Últimos Usuarios</h3>
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Estado</th>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>ana@email.com</td>
+                    <td>Activo</td>
+                </tr>
+                <tr>
+                    <td>Juan</td>
+                    <td>juan@email.com</td>
+                    <td>Inactivo</td>
+                </tr>
+                <tr>
+                    <td>María</td>
+                    <td>maria@email.com</td>
+                    <td>Inactivo</td>
+                </tr>
+                <tr>
+                    <td>Marcos</td>
+                    <td>marcos@email.com</td>
+                    <td>Activo</td>
+                </tr>
+                <tr>
+                    <td>Rosa</td>
+                    <td>rosa@email.com</td>
+                    <td>Activo</td>
+                </tr>
+                <tr>
+                    <td>Miguel</td>
+                    <td>miguel@email.com</td>
+                    <td>Inactivo</td>
+                </tr>
+            </table>
+        </div>
+        <canvas id="miGrafico"></canvas>
+    </div>
+
+    <script src="menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="graphics.js"></script>
+
+
+
+</body>
